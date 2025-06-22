@@ -1,0 +1,30 @@
+:root {
+	--primary-blue: #004E89;
+	--accent-blue: #0077b6;
+	--pure-white: #ffffff;
+	--highlight-yellow: #FFD400;
+	--dark-bg: #2d2d2d;
+}
+
+.navbar {
+	background: var(--pure-white) !important;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+	padding: 1rem 0;
+}
+
+.nav-link {
+	color: var(--primary-blue) !important;
+	font-weight: 500;
+	margin: 0 1.5rem;
+	position: relative;
+}
+
+.nav-link:hover::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--highlight-yellow);
+}
